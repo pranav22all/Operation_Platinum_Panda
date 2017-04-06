@@ -1,0 +1,80 @@
+.cent_text{
+	text-align: center; 
+}
+body{
+	background-color: LightGray !important;
+	padding-top: 70px;  
+}
+.page_fill{
+	background-color: PaleGoldenrod	; 
+}
+.page_top{
+	background-color: LightGray !important;
+	margin: 10px auto auto auto; 
+}
+p{
+	font-family: "Times New Roman";
+}
+.sep_group{
+	margin: 50px auto auto auto !important;
+}
+.buf_top{
+	margin: 20px auto auto auto !important;
+}
+.low_group{
+	margin: 20px auto auto auto !important;
+}
+.fine_print{
+	font-size: 18px;
+}
+.big_print{
+	font-size: 30px;
+}
+.gold_jumbotron{
+	background-color: PaleGoldenrod !important; 
+}
+.imp_text{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center; 
+}
+/* Carousel Styling */
+.slide1{
+  text-align: center; 
+  height: 500px;
+  background-color: 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  text-align: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  text-align: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: "Times New Roman", sans-serif;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+.slide_image{
+	width: 60%;
+	height: 500px;
+}
+.act_foot{
+	background-color: Gray; 
+}
+.title{
+	height: 50px;
+}

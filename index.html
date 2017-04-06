@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cheng Foundation Official Website</title>
+		<link href="styles/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+			<div class = "container">
+				<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				  	<!-- Overall NavBar set up stuff below  -->   
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <!--Navbar heading for the foundtion -->
+				      <a class="navbar-brand" href="index.html">
+				      	<img class= "title" src="images/Title.png" alt="Cheng Foundation">	
+				      </a>
+				    </div>
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <!-- Left aligned links -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+				        <li><a href="aboutus.html">About Us</a></li>
+				        <li><a href="ourwork.html">Our Work</a></li>
+				        <li><a href="properties.html">Properties</a></li>
+				        <li><a href="donations.html">Donations</a></li>
+				        <li><a href="socialmedia.html">Social Media</a></li>
+				        <li><a href="testimonials.html">Testimonials</a></li>
+				      </ul>
+				      <!-- Right aligned links -->
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="contactus.html">Contact Us</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+		</header>
+		<!-- <p>HELLO</p>
+		<p>HELLO</p> TEMP SOLUTION FOR THE HEADER PRBLM-->
+		<!-- More stuff after the nav bar -->  
+		<div id="theCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Define how many slides to put in the carousel, order list containing this, plus connects pack to carousel class-->
+		  <ol class="carousel-indicators">
+		    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+		    <li data-target="#theCarousel" data-slide-to="1"> </li>
+		    <li data-target="#theCarousel" data-slide-to="2"></li>
+		  </ol>
+		  <!-- Define the text to place over the image, ordered list w/ captions + buttons-->
+			<div class="carousel-inner">
+			    <div class="item active">
+			    <!-- <img src="images/Cheng_Building.JPG" alt="Building"> -->
+				    <div class ="slide1">
+				    	<img class="slide_image" src="images/Cheng_Building.JPG" alt="Building">
+				    	<div class="carousel-caption">
+				      		<p><a href="ourwork.html" class="btn btn-primary btn-sm">Learn more about our vision</a></p>
+				    	</div>
+				  	</div>
+				</div>
+			  	<div class="item">
+				  	<div class="slide2">
+				  		<img class="slide_image" src="images/Cheng_Dinner.JPG" alt="Dinner">
+				  		<div class="carousel-caption">
+				    		<p>Cheng Foundation Food Aid</p>
+				  		</div>
+			  		</div>
+				</div>
+				<div class="item">
+					<div class="slide3">
+						<img class="slide_image" src="images/Cheng_Mountain.jpg" alt="Mountain">
+						<div class="carousel-caption">
+							<p>A beautiful shot of the Cheng Alphine Properties, located in Coloardo</p>
+							<p><a href="properties.html" class="btn btn-primary btn-sm">Learn more about our different properties</a></p>
+						</div>
+					</div>
+			</div>
+			  <!-- Set the actions to take when the arrows are clicked -->
+				  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+				  	<span class="glyphicon glyphicon-chevron-left"> </span>
+				  </a>
+				  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+				  	<span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="jumbotron gold_jumbotron">
+			 	<div class="cent_text">
+					<img src="images/cheng_logo.jpg">
+				</div>
+			 	<h1 class="imp_text">The Cheng Foundation</h1>
+			  	<p>The Cheng Foundation's lifelong mission is to use the Cheng family trusts 
+			  	to help support the less fortunate members of our local communities.
+			  	</p>
+			  	<div class = "cent_text">
+			  		<p><a class="btn btn-primary btn-lg" href="ourwork.html" role="button">Learn more about our vision</a></p>
+			  	</div>
+			</div>
+		</div>
+
+
+
+
+		<footer class="page-footer">
+		    <!--Footer Links-->
+		    <div class="container-fluid">
+		        <div class="row">
+		            <!--First column-->
+		            <div class="col-md-12 act_foot">
+		                <h5 class="title cent_text">Cheng Foundation</h5>
+		            </div>
+		        </div>
+		    </div>
+		    <!--/.Footer Links-->
+		    <!--Copyright-->
+		    <div class="footer-copyright">
+		        <div class="container-fluid act_foot cent_text">
+		            2015 Copyright: <a href="https://www.chengfoundation.us"> ChengFoundation.us </a>
+		        </div>
+		    </div>
+		    <!--/.Copyright-->
+		</footer>
+	</body>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</html>
