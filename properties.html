@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>Cheng Foundation Properties</title>
+			<title>Properties-The Cheng Foundation</title>
+			<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 			<link href="styles/main.css" rel="stylesheet">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -38,17 +39,18 @@
 					        <li><a href="ourwork.html">Our Work</a></li>
 					        <li class="active"><a href="properties.html">Properties</a></li>
 					        <li><a href="donations.html">Donations</a></li>
+					        <li><a href="accepteddonations.html">Accepted Donations</a></li>
 					        <li><a href="testimonials.html">Testimonials</a></li>
 					      </ul>
 					      <!-- Right aligned links -->
 					      <ul class="nav navbar-nav navbar-right">
 						    <li>
-					        	<a class="btn btn-social-icon btn-facebook btn-lg" href="https://facebook.com">
+					        	<a class="btn btn-social-icon btn-facebook btn-lg" href="https://www.facebook.com/bryce.cheng.1">
 		   							<span class="fa fa-facebook"></span>
 		  						</a>
 		  					</li>
 		  					<li>
-					        	<a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com">
+					        	<a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com/bryce_cheng">
 		   							<span class="fa fa-twitter"></span>
 		  						</a>
 		  					</li>
@@ -89,7 +91,9 @@
 				    <div class ="slide1">
 				    	<img class="slide_image" src="images/congress.JPG" alt="Building1">
 				    	<div class="carousel-caption">
+				      		<h3 class="cent_text med_print">The Capitol Building</h3>
 				      		
+				      		<p>The Cheng Family owns a number of government properties in and around Washington D.C. Most prominent is their recent purchase of the Capitol Building, the seat of the United States Congress. In addition to owning governmental landmarks, the Cheng Foundation also exerts an unprecedented influence on US politics, with over 500 Congressmen being active members of the Cheng Foundation. </p>
 				    	</div>
 				  	</div>
 				</div>
@@ -97,7 +101,8 @@
 				  	<div class="slide2">
 				  		<img class="slide_image" src="images/prop2.jpg" alt="Building2">
 				  		<div class="carousel-caption">
-
+				      		<h3 class="cent_text med_print">Cheng Family Resorts</h3>
+				      		<p>A mystic resort located just outside Hong Kong that has been passed down for generations within the Cheng dynasty. Following the death of Bryce and Darrell's uncle, Deng Xiaoping, the Foundation inherited ownership of the resort. Visitors must pay $5 million in order to enter the compound. Certain Cheng family clients such as Xi Jinping are offered a discounted rate of $4,999,999.99.</p>
 				  		</div>
 			  		</div>
 				</div>
@@ -105,7 +110,10 @@
 					<div class="slide3">
 						<img class="slide_image" src="images/palace.png" alt="Building3">
 						<div class="carousel-caption">
-
+				      		<h3 class="cent_text med_print">The Temple of the Twin Dragons</h3>
+				      		<p>
+				      			The Temple of the Twin Dragons is where Bryce and Darrell spend the majority of their time. Once a temple, the estates have now been renovated into a lavish palace employing 2000 servants and featuring 17 indoor Jacuzzis and 53 tennis courts with nets hand-crafted out of silver. The palace is most famous for its system of gold-plated toilets which have been emulated by billionaires worldwide.   
+				      		</p>
 						</div>
 					</div>
 				</div>
@@ -113,7 +121,8 @@
 					<div class="slide4">
 						<img class="slide_image" src="images/prop1.jpg" alt="Building4">
 						<div class="carousel-caption">
-
+				      		<h3 class="cent_text med_print">The Biltmore Estate</h3>
+				      		<p>The recent purchase of the Biltmore Estate by the Cheng Foundation represents its commitment to preserving American historical treasures. After running the Vanderbilt family bankrupt, the Cheng family generously bought out their estate making it accessible to tourists for the first time in decades.</p>
 						</div>
 					</div>
 				</div>
@@ -121,7 +130,8 @@
 					<div class="slide5">
 						<img class="slide_image" src="images/prop5.jpg" alt="Building5">
 						<div class="carousel-caption">
-
+				      		<h3 class="cent_text med_print">The Tower of the Twin Dragons</h3>
+				      		<p>The Tower of the Twin Dragons was an architectural miracle created through Foundation efforts. Beautifully carved into the natural landscape of rural Oregon, it represents the Cheng Foundation's committment to both technological progress and nature. It has since been made a protected National Landmark. </p>
 						</div>
 					</div>
 				</div>
@@ -134,6 +144,7 @@
 				  </a>
 			</div>
 		</div>
+		<div class="new-caption-area"></div>
 		<footer class="footer">
 			<div class="container">
 				<h5 class="cent_text no_pad">Created by Pranav Sriram | The Cheng Foundation Copyright 2017: <a href="https://www.chengfoundation.us"> ChengFoundation.us </a></h5>
@@ -142,4 +153,18 @@
 	</body>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	    $('.carousel').carousel();
+	    var caption = $('div.item:nth-child(1) .carousel-caption');
+	    $('.new-caption-area').html(caption.html());
+	    caption.css('display', 'none');
+
+	    $(".carousel").on('slide.bs.carousel', function (evt) {
+	        var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
+	        $('.new-caption-area').html(caption.html());
+	        caption.css('display', 'none');
+	    });
+	});
+	</script>
 </html>

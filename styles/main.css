@@ -130,10 +130,18 @@ h5{
   background-position: center;
   background-size: cover;
 }
-.lightgray{
+.new-caption-area {
+    width: 900px;
+    height: 100px;
+    padding-top: 0px; 
+    margin: auto;
+    color: black;
+    
+  }
+.whitesmoke{
 	padding-top: 0 !important; 
 	height: 1200px;
-	background-color: LightGray !important;
+	background-color: WhiteSmoke !important;
 }
 .carousel-caption p{
   font-size: 2em;
@@ -149,6 +157,9 @@ h5{
 .no_pad{
 	padding: 0;
 }
+.no_bullets{
+	list-style: none; 
+}
 .pad_top{
 	padding-top: 50px;
 }
@@ -156,8 +167,12 @@ h5{
 	padding-bottom: 50px;
 }
 .small_pad_bot{
+	padding-bottom: 15px; 
+}
+.med_pad_bot{
 	padding-bottom: 25px; 
 }
+
 .testimonial_img{
 	height: 500px;
 	width: 400px; 

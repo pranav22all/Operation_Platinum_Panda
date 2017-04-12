@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>Donations-The Cheng Foundation</title>
+			<title>Accepted Donations-The Cheng Foundation</title>
 			<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 			<link href="styles/main.css" rel="stylesheet">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -38,8 +38,8 @@
 					        <li><a href="aboutus.html">About Us</a></li>
 					        <li><a href="ourwork.html">Our Work</a></li>
 					        <li><a href="properties.html">Properties</a></li>
-					        <li class="active"><a href="donations.html">Donations</a></li>
-					        <li><a href="accepteddonations.html">Accepted Donations</a></li>
+					        <li><a href="donations.html">Donations</a></li>
+					        <li class="active"><a href="accepteddonations.html">Accepted Donations</a></li>
 					        <li><a href="testimonials.html">Testimonials</a></li>
 					      </ul>
 					      <!-- Right aligned links -->
@@ -71,57 +71,69 @@
 					</nav>
 				</div>
 			</header>
-		<div class="container whitesmoke col-lg-8 col-lg-offset-2">
-
-			<h1 class="imp_text cent_text pg_head">  <strong>Donations</strong> </h1>
-			<p class="cent_text fine_print"> You must answer <strong>all</strong> of the questions below in order to be eligible for a Cheng Grant.</p>
-			<p class="cent_text fine_print"> In order to be eligible for the responses slideshow on the Accepted Donations page, you must take a screenshot of your entire donation application prior to clicking the submit button. Please send screenshots to thechengfoundation@gmail.com.</p>			
-			<div class="container">
-				<div class="input-group sep_group">
-					  <span class="input-group-addon" id="basic-addon1">Full Name</span>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="First Name">
-				</div>
-				<div class="input-group low_group">
-					<span class="input-group-addon" id="basic-addon2">Favorite Cheng Family Member</span>
-					<input type="text" class="form-control" placeholder="" aria-describedby="Favorite">
-					<span class="input-group-addon" id="basic-addon2">Cheng</span>
-				</div>
-				<div class="cent_text form-group low_group">
-					<textarea class="form-control" placeholder="In 150 words or less, defend you answer to the previous question" rows="5" id="comment"></textarea>
-				</div>
-				<div class="input-group low_group">
-				  <span class="input-group-addon">Email Address</span>
-				  <input type="text" class="form-control" aria-label="Email">
-				  <span class="input-group-addon" id="basic-addon2">@chengfoundation.us</span>
-				</div>
-				<div class="input-group low_group">
-					<span class="input-group-addon">Date of Projected Death</span>
-					<input type="text" class="form-control" aria-label="DOD">
-				</div>
-				<div class="input-group low_group">
-					<span class="input-group-addon">Horoscope</span>
-					<input type="text" class="form-control" aria-label="Horoscope">
-				</div>
-				<div class="input-group low_group">
-					<span class="input-group-addon">Yearly Income (in $)</span>
-					<input type="text" class="form-control" aria-label="Yearly income">
-				</div>
-				<div class="input-group low_group">
-					<span class="input-group-addon">Full Social Security Number</span>
-					<input type="text" class="form-control" aria-label="Yearly income">
-				</div>
-				<div class="input-group low_group">
-					<span class="input-group-addon">Bank Account Password</span>
-					<input type="text" class="form-control" aria-label="Yearly income">
-				</div>
-				<div class="cent_text form-group low_group">
-					<textarea class="form-control" placeholder="In 250 words or less, explain why you are worthy of receiving a Cheng Grant." rows="10" id="comment"></textarea>
-				</div>
-				<div class="cent_text form-group low_group">
-					<textarea class="form-control" placeholder="Which Cheng do you worship: Bryce or Darrell? Why?" rows="5" id="comment"></textarea>
-				</div>
-				<div class = "cent_text buf_top">
-					<p><a class="btn btn-success btn-lg" href="index.html" role="button">Submit</a></p>
+	
+		<h1 class="imp_text cent_text pg_head">  <strong>Accepted Donations</strong> </h1>
+		<h4 class="cent_text">Check in daily to receive that latest updates on which grant applications the Cheng Grant Organization has accepted.</h4> 
+		<h4 class="cent_text">Responses and a leaderboard (with the names of the best applicants) with be updated regularly.</h4>
+		<div class="panel panel-default col-lg-8 col-lg-offset-2 med_pad_bot">
+			<div class="panel-heading close_lead">
+				<h3 class="panel-title cent_text">Leaderboard<span class="pull-right glyphicon glyphicon-menu-down"></span></h3>
+			</div>
+			<div class="panel-body close_lead_this">
+				<p class="imp_text">Arranged based on best composite application score (/100) to worst composite score.</p>
+				<ul class="imp_text no_bullets">
+					<li><strong>1)</strong> Jason Shaw</li>
+					<li><strong>2)</strong> Kevin Chen</li>
+					<li><strong>3)</strong> Gowtham Manikandan</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-default col-lg-8 col-lg-offset-2 med_pad_bot">
+			<div class="panel-heading close_resp">
+				<h3 class="panel-title cent_text">Accepted Donation Responses<span class="pull-right glyphicon glyphicon-menu-down"></span></h3>
+			</div>
+			<div class="panel-body close_resp_this">
+				<p class="imp_text">Here are some of our highest scoring applications! We strongly recommend studying off of them.</p>
+				<!-- add carousel right here, and make sure jquery exists on this page -->
+				<div id="theCarousel" class="carousel slide" data-ride="carousel">
+				  <!-- Define how many slides to put in the carousel, order list containing this, plus connects pack to carousel class-->
+				  <ol class="carousel-indicators">
+				    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+				    <li data-target="#theCarousel" data-slide-to="1"> </li>
+				    <li data-target="#theCarousel" data-slide-to="2"></li>
+				  </ol>
+				  <!-- Define the text to place over the image, ordered list w/ captions + buttons-->
+					<div class="carousel-inner">
+					    <div class="item active">
+					    <!-- <img src="images/Cheng_Building.JPG" alt="Building"> -->
+						    <div class ="slide1">
+						    	<img class="slide_image" src="images/empty.JPG" alt="empty">
+						    	<div class="carousel-caption">
+						    	</div>
+						  	</div>
+						</div>
+					  	<div class="item">
+						  	<div class="slide2">
+						  		<img class="slide_image" src="" alt="Dinner">
+						  		<div class="carousel-caption">
+						  		</div>
+					  		</div>
+						</div>
+						<div class="item">
+							<div class="slide3">
+								<img class="slide_image" src="" alt="Mountain">
+								<div class="carousel-caption">
+								</div>
+							</div>
+					</div>
+					  <!-- Set the actions to take when the arrows are clicked -->
+						  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+						  	<span class="glyphicon glyphicon-chevron-left"> </span>
+						  </a>
+						  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+						  	<span class="glyphicon glyphicon-chevron-right"></span>
+						  </a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -133,4 +145,20 @@
 	</body>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		function change_credits_init(){
+			$(".close_resp_this").fadeToggle(0);
+		}
+		function change_resp_credits(){
+			$(".close_resp_this").fadeToggle(200); 
+		} 
+		function change_lead_credits(){
+			$(".close_lead_this").fadeToggle(200);
+		}
+		change_credits_init() 
+		$('.close_resp').on("click",change_resp_credits)
+		$('.close_lead').on("click",change_lead_credits)
+	});
+	</script>
 </html>

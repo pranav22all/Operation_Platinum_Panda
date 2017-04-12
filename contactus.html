@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>Cheng Foundation Contact Us</title>
+			<title>Contact Us-The Cheng Foundation</title>
+			<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 			<link href="styles/main.css" rel="stylesheet">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -38,17 +39,18 @@
 					        <li><a href="ourwork.html">Our Work</a></li>
 					        <li><a href="properties.html">Properties</a></li>
 					        <li><a href="donations.html">Donations</a></li>
+					        <li><a href="accepteddonations.html">Accepted Donations</a></li>
 					        <li><a href="testimonials.html">Testimonials</a></li>
 					      </ul>
 					      <!-- Right aligned links -->
 					      <ul class="nav navbar-nav navbar-right">
 						    <li>
-					        	<a class="btn btn-social-icon btn-facebook btn-lg" href="https://facebook.com">
+					        	<a class="btn btn-social-icon btn-facebook btn-lg" href="https://www.facebook.com/bryce.cheng.1">
 		   							<span class="fa fa-facebook"></span>
 		  						</a>
 		  					</li>
 		  					<li>
-					        	<a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com">
+					        	<a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com/bryce_cheng">
 		   							<span class="fa fa-twitter"></span>
 		  						</a>
 		  					</li>
@@ -78,21 +80,22 @@
 		<div class="cent_text col-lg-8 col-lg-offset-2">
 			<p><a class="btn btn-success btn-lg" href="donations.html" role="button">Submit</a></p>
 		</div>
-		<div class="panel panel-default col-lg-8 col-lg-offset-2">
-			<div class="panel-heading">
-				<h3 class="panel-title cent_text">Credits / Additional Information</h3>
+		<div class="panel panel-default col-lg-8 col-lg-offset-2 med_pad_bot">
+			<div class="panel-heading close_cred ">
+				<h3 class="panel-title cent_text">Credits / Additional Information <span class="pull-right glyphicon glyphicon-menu-down"></span></h3>
 			</div>
-			<div class="panel-body">
-				<!-- <img class="testimonial_img img-responsive center-block" src=images/Barry.JPG alt="Barry"> -->
-				<p class="imp_text med_print "><strong>The following people were instrumental in helping with the construction of the Cheng Foundation site:</strong></p>
-				<p class="imp_text">If you ever see them, please thank them for their service.</p>
+			<div class="panel-body close_this">
+				<p class="imp_text med_print"><strong>Credits:</strong></p>
+				<p class="imp_text">Please thank the following people for their service toward the Cheng Foundation site.</p>
 				<ul class="imp_text custom-bullet">
 					<li>Jason Shaw: Photos and About Us</li>
 					<li>Kevin Chen: Photos</li>
-					<li>Gowtham Manikandan: Photos</li>
+					<li>Gowtham Manikandan: Photos and  About Us</li>
 				</ul>
-				<p class="imp_text">Site was created using Bootstrap with an attempted focus on an old-school (late 2000s) aesthetic.</p>
-
+				<p class="imp_text med_print"><strong>Additional Information:</strong></p>				
+				<p class="imp_text">Site was created using Bootstrap with an attempted focus on a gray-based old-school (late 2000s) aesthetic.</p>
+				<p class="imp_text">Intended as a piece of satire for the 2017 Cheng Literary Competition</p>
+				<p class='imp_text'>Comissioned by Bryce and Darrell Cheng</p>
 			</div>
 		</div>
 		<footer class="footer">
@@ -103,4 +106,17 @@
 	</body>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src ="scripts/main.js"></script>
+	<script>
+	$(document).ready(function(){
+		function change_credits_init(){
+			$(".close_this").fadeToggle(0);
+		}
+		function change_credits(){
+			$(".close_this").fadeToggle(200); 
+		} 
+		change_credits_init() 
+		$('.close_cred').on("click",change_credits)
+	});
+	</script>
 </html>
