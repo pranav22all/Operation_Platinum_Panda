@@ -5,6 +5,10 @@
 			<link href="styles/main.css" rel="stylesheet">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato|PT+Serif" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
+			<script src="https://use.fontawesome.com/ebaf6b7b9f.js"></script>
 	</head>
 	<body>
 		<header>
@@ -34,11 +38,30 @@
 					        <li><a href="ourwork.html">Our Work</a></li>
 					        <li class="active"><a href="properties.html">Properties</a></li>
 					        <li><a href="donations.html">Donations</a></li>
-					        <li><a href="socialmedia.html">Social Media</a></li>
 					        <li><a href="testimonials.html">Testimonials</a></li>
 					      </ul>
 					      <!-- Right aligned links -->
 					      <ul class="nav navbar-nav navbar-right">
+						    <li>
+					        	<a class="btn btn-social-icon btn-facebook btn-lg" href="https://facebook.com">
+		   							<span class="fa fa-facebook"></span>
+		  						</a>
+		  					</li>
+		  					<li>
+					        	<a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com">
+		   							<span class="fa fa-twitter"></span>
+		  						</a>
+		  					</li>
+		  					<li>
+					        	<a class="btn btn-social-icon btn-instagram btn-lg" href="https://www.instagram.com/b_ryce_cheng/">
+		   							<span class="fa fa-instagram"></span>
+		  						</a>
+		  					</li>
+		  					<li>
+					        	<a class="btn btn-social-icon btn-google btn-lg" href="https://plus.google.com/111061049653291785131">
+		  							<span class="fa fa-google"></span>
+		  						</a>
+		  					</li>
 					        <li><a href="contactus.html">Contact Us</a></li>
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
@@ -46,25 +69,75 @@
 					</nav>
 				</div>
 		</header>
+		<h1 class="imp_text cent_text pg_head"><strong>Properties</strong></h1>
+		<h4 class="cent_text small_pad_bot">Here's a glimpse into a few of the Cheng Foundation's many properties.</h4>
+		<div id="theCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Define how many slides to put in the carousel, order list containing this, plus connects pack to carousel class-->
+		  <ol class="carousel-indicators">
+		    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
+		    <li data-target="#theCarousel" data-slide-to="1"> </li>
+		    <li data-target="#theCarousel" data-slide-to="2"></li>
+		    <li data-target="#theCarousel" data-slide-to="3"></li>
+		    <li data-target="#theCarousel" data-slide-to="4"></li>
+		  </ol>
+		  <!-- Define the text to place over the image, ordered list w/ captions + buttons-->
 
-		<footer class="page-footer">
-		    <!--Footer Links-->
-		    <div class="container-fluid">
-		        <div class="row">
-		            <!--First column-->
-		            <div class="col-md-12 act_foot">
-		                <h5 class="title cent_text">Cheng Foundation</h5>
-		            </div>
-		        </div>
-		    </div>
-		    <!--/.Footer Links-->
-		    <!--Copyright-->
-		    <div class="footer-copyright">
-		        <div class="container-fluid act_foot cent_text">
-		            2015 Copyright: <a href="https://www.chengfoundation.us"> ChengFoundation.us </a>
-		        </div>
-		    </div>
-		    <!--/.Copyright-->
+		  <!-- FOR ALL THE PROPERTIES, THESE NEED TO BE IN A DIFFERENT SLIDE FORMAT THAN HOME PAGE, CAN JUST HAVE TWO SLIDE CLASSES ONE FOR HOME PAGE AND ONE FOR HERE -->
+			<div class="carousel-inner">
+			    <div class="item active">
+			    <!-- <img src="images/Cheng_Building.JPG" alt="Building"> -->
+				    <div class ="slide1">
+				    	<img class="slide_image" src="images/congress.JPG" alt="Building1">
+				    	<div class="carousel-caption">
+				      		
+				    	</div>
+				  	</div>
+				</div>
+			  	<div class="item">
+				  	<div class="slide2">
+				  		<img class="slide_image" src="images/prop2.jpg" alt="Building2">
+				  		<div class="carousel-caption">
+
+				  		</div>
+			  		</div>
+				</div>
+				<div class="item">
+					<div class="slide3">
+						<img class="slide_image" src="images/palace.png" alt="Building3">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slide4">
+						<img class="slide_image" src="images/prop1.jpg" alt="Building4">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slide5">
+						<img class="slide_image" src="images/prop5.jpg" alt="Building5">
+						<div class="carousel-caption">
+
+						</div>
+					</div>
+				</div>
+			  <!-- Set the actions to take when the arrows are clicked -->
+				  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+				  	<span class="glyphicon glyphicon-chevron-left"> </span>
+				  </a>
+				  <a class="right carousel-control" href="#theCarousel" data-slide="next">
+				  	<span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<h5 class="cent_text no_pad">Created by Pranav Sriram | The Cheng Foundation Copyright 2017: <a href="https://www.chengfoundation.us"> ChengFoundation.us </a></h5>
+			</div> 
 		</footer>
 	</body>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

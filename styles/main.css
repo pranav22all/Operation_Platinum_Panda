@@ -2,21 +2,31 @@
 	text-align: center; 
 }
 body{
-	background-color: LightGray !important;
+	background-color: #efefef !important;
 	padding-top: 70px;  
 }
-.page_fill{
-	background-color: PaleGoldenrod	; 
-}
-.page_top{
-	background-color: LightGray !important;
-	margin: 10px auto auto auto; 
-}
+
 p{
-	font-family: "Times New Roman";
+	font-family: 'PT Serif', serif;
+}
+h1{
+	font-family: 'Ubuntu', sans-serif !important; 
+}
+h3{
+	font-family: 'Ubuntu',sans-serif !important; 
+}
+h4{
+	font-family: 'PT Serif', serif !important;
+	/*font-size: 25px !important; */
+}
+h5{
+	font-family: 'PT Serif', serif !important; 
+}
+.pg_head{
+	font-family: 'Pinyon Script', cursive !important;
 }
 .sep_group{
-	margin: 50px auto auto auto !important;
+	margin: 25px auto auto auto !important;
 }
 .buf_top{
 	margin: 20px auto auto auto !important;
@@ -25,23 +35,69 @@ p{
 	margin: 20px auto auto auto !important;
 }
 .fine_print{
-	font-size: 18px;
+	font-size: 18px !important;
 }
 .big_print{
 	font-size: 30px;
 }
+.med_print{
+	font-size: 24px;
+}
 .gold_jumbotron{
 	background-color: PaleGoldenrod !important; 
 }
+.grey_jumbotron{
+	background-color: LightGray !important; 
+}
 .imp_text{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	/*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
 	text-align: center; 
+}
+.imp_text_no_cent{
+	
+}
+.custom-bullet li {
+    display: block;
+}
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: center;
+    padding: 5px;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
+.read_col{
+	color: LightGray !important;
+}
+.bordered{
+	padding-top: 100px; 
+	padding-left: 40px; 
+	padding-right: 40px; 
+}
+.barry_bordered{
+	padding-top: 130px; 
+	padding-left: 40px; 
+	padding-right: 40px; 
+}
+.kevin_bordered{
+	padding-top: 100px; 
+	padding-left: 40px; 
+	padding-right: 40px; 
+}
+.allen_bordered{
+	padding-top: 200px; 
+	padding-left: 40px; 
+	padding-right: 40px; 
 }
 /* Carousel Styling */
 .slide1{
   text-align: center; 
   height: 500px;
-  background-color: 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -60,21 +116,73 @@ p{
   background-position: center;
   background-size: cover;
 }
-.carousel-caption h1{
-  font-size: 5.4em;
-  font-family: "Times New Roman", sans-serif;
-  padding-bottom: .4em;
+.slide4{
+  text-align: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide5{
+  text-align: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.lightgray{
+	padding-top: 0 !important; 
+	height: 1200px;
+	background-color: LightGray !important;
 }
 .carousel-caption p{
   font-size: 2em;
 }
+
 .slide_image{
 	width: 60%;
 	height: 500px;
 }
-.act_foot{
-	background-color: Gray; 
-}
 .title{
 	height: 50px;
+}
+.no_pad{
+	padding: 0;
+}
+.pad_top{
+	padding-top: 50px;
+}
+.pad_bot{
+	padding-bottom: 50px;
+}
+.small_pad_bot{
+	padding-bottom: 25px; 
+}
+.testimonial_img{
+	height: 500px;
+	width: 400px; 
+	/*width: 40%;*/
+	/*margin-left: 10%;*/
+}
+.test_holder{
+	background-color: white; 
+	margin-left: 10%; 
+	margin-right: 10%;
+	height: 800px;
+}
+.top_test{
+	height: 300px;
+	margin-bottom: 50px; 
+}
+.second_test{
+	height: 300px;
+}
+.footer{
+	display: block; 
+	position: fixed; 
+	bottom: 0 !important;
+	width: 100%;
+	height: 40px;
+	background-color: #2e2e2e; 
+	color: white;
 }
