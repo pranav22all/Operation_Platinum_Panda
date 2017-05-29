@@ -11,7 +11,7 @@
 			<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
 			<script src="https://use.fontawesome.com/ebaf6b7b9f.js"></script>
 	</head>
-	<body>
+	<body class="big_top">
 		<header>
 				<div class = "container">
 					<nav class="navbar navbar-default navbar-fixed-top">
@@ -45,22 +45,22 @@
 					      <!-- Right aligned links -->
 					      <ul class="nav navbar-nav navbar-right">
 						    <li>
-					        	<a class="btn btn-social-icon btn-facebook btn-lg" href="https://www.facebook.com/bryce.cheng.1">
+					        	<a class="btn btn-social-icon btn-facebook btn-lg" href="https://www.facebook.com/bryce.cheng.1" target="_blank">
 		   							<span class="fa fa-facebook"></span>
 		  						</a>
 		  					</li>
 		  					<li>
-					        	<a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com/bryce_cheng">
+					        	<a class="btn btn-social-icon btn-twitter btn-lg" href="https://twitter.com/bryce_cheng" target="_blank">
 		   							<span class="fa fa-twitter"></span>
 		  						</a>
 		  					</li>
 		  					<li>
-					        	<a class="btn btn-social-icon btn-instagram btn-lg" href="https://www.instagram.com/b_ryce_cheng/">
+					        	<a class="btn btn-social-icon btn-instagram btn-lg" href="https://www.instagram.com/b_ryce_cheng/" target="_blank">
 		   							<span class="fa fa-instagram"></span>
 		  						</a>
 		  					</li>
 		  					<li>
-					        	<a class="btn btn-social-icon btn-google btn-lg" href="https://plus.google.com/111061049653291785131">
+					        	<a class="btn btn-social-icon btn-google btn-lg" href="https://plus.google.com/111061049653291785131" target="_blank">
 		  							<span class="fa fa-google"></span>
 		  						</a>
 		  					</li>
@@ -72,35 +72,45 @@
 				</div>
 		</header>
 		<h1 class="imp_text cent_text pg_head"><strong>Contact Us</strong></h1>
-		<h4 class="cent_text">Have any questions or suggestions for the future of the Cheng Foudation. Share them with us below.</h4>
+		<h4 class="cent_text">Have any questions or suggestions for the future of the Cheng Foudation? Share them with us below.</h4>
 		<div class="cent_text form-group col-lg-8 col-lg-offset-2">
-			<textarea class="form-control" rows="10" id="comment"></textarea>
+			<textarea class="form-control response" rows="10" id="comment" onfocus="change_thank();"></textarea>
 		</div>
 
 		<div class="cent_text col-lg-8 col-lg-offset-2">
-			<p><a class="btn btn-success btn-lg" href="donations.html" role="button">Submit</a></p>
+			<div data-alerts="alerts" data-titles='{"warning": "<em>Warning!</em>", "error": "<em>Error!</em>"}' data-ids="myid" data-fade="3000"></div>
+			<p><a class="btn btn-success btn-lg sub" role="button">Submit</a></p>
+			<div class="alert alert-success thanker collapse" role="alert">Thank you for your response!</div>
 		</div>
 		<div class="panel panel-default col-lg-8 col-lg-offset-2 med_pad_bot">
 			<div class="panel-heading close_cred ">
 				<h3 class="panel-title cent_text">Credits / Additional Information <span class="pull-right glyphicon glyphicon-menu-down"></span></h3>
 			</div>
-			<div class="panel-body close_this">
+			<div class="panel-body close_this collapse">
 				<p class="imp_text med_print"><strong>Credits:</strong></p>
 				<p class="imp_text">Please thank the following people for their service toward the Cheng Foundation site.</p>
 				<ul class="imp_text custom-bullet">
-					<li>Jason Shaw: Photos and About Us</li>
+					<li>Mrs. Hargrove, Mr.Bennett, Hannah Glazier, Jace Loncharich, Dalton Thompson, Nicholas Gemelas: Advertising / Outreach</li>					
+					<li>Barry Wei, Kevin Chen, Allen Zheng, Daniel Lee, Julien Zhu, Sathvik Madduri, Jason Shaw: Testimonials</li>
+					<li>Jason Shaw, Sathvik Madduri, Allen Zhang: Program Partners</li>					
+					<li>Jason Shaw: Photos, About Us, and Funding</li>
+					<li>Gowtham Manikandan: Photos and About Us</li>
+					<li>William Cheng: Cheng Foundation Member</li>					
+					<li>Joseph Paavola: Proofreading</li>
 					<li>Kevin Chen: Photos</li>
-					<li>Gowtham Manikandan: Photos and  About Us</li>
 				</ul>
-				<p class="imp_text med_print"><strong>Additional Information:</strong></p>				
-				<p class="imp_text">Site was created using Bootstrap with an attempted focus on a gray-based old-school (late 2000s) aesthetic.</p>
-				<p class="imp_text">Intended as a piece of satire for the 2017 Cheng Literary Competition</p>
-				<p class='imp_text'>Comissioned by Bryce and Darrell Cheng</p>
+				<p class="imp_text med_print"><strong>Additional Information:</strong></p>
+				<p class="imp_text">Site intended as a satirical critique on the United States' historical infatuation with wealth and the people who hold it, as well as a critique of the Gospel of Wealth and Social Darwinism.</p>
+				<p class="imp_text">Site created from scratch using Bootstrap in conjunction with HTML, CSS, and JQuery with an attempted focus on a gray-based old-school (late 2000s) aesthetic.</p>
+				<p class='imp_text'>Undertaken by Pranav Sriram and Darrell Cheng for a <strong>2017 APUSH Project</strong></p>
 			</div>
+		</div>
+		<div class="bot_box med_pad_bot pad_top">
+			<p>&nbsp &nbsp &nbsp &nbsp &nbsp </p>
 		</div>
 		<footer class="footer">
 			<div class="container">
-				<h5 class="cent_text no_pad">Created by Pranav Sriram | The Cheng Foundation Copyright 2017: <a href="https://www.chengfoundation.us"> ChengFoundation.us </a></h5>
+				<h5 class="cent_text no_pad">Created by Pranav Sriram | The Cheng Foundation Copyright 2017: <a href="index.html"> ChengFoundation.us </a></h5>
 			</div> 
 		</footer>
 	</body>
@@ -109,14 +119,17 @@
 	<script src ="scripts/main.js"></script>
 	<script>
 	$(document).ready(function(){
-		function change_credits_init(){
-			$(".close_this").fadeToggle(0);
-		}
+
 		function change_credits(){
 			$(".close_this").fadeToggle(200); 
+		}
+		function change_thank(){
+			$(".thanker").fadeIn(200);
+			$(".response").val("");
 		} 
-		change_credits_init() 
+		
 		$('.close_cred').on("click",change_credits)
+		$('.sub').on("click",change_thank) 
 	});
 	</script>
 </html>
